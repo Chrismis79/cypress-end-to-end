@@ -121,6 +121,7 @@ export default function Form() {
       <label htmlFor='motivation'>
         Why would you like to help?
         <textarea
+          data-cy="textarea"
           name='motivation'
           value={formState.motivation}
           onChange={inputChange}
@@ -131,7 +132,7 @@ export default function Form() {
       </label>
       <label htmlFor='positions'>
         What would you like to help with?
-        <select id='positions' name='positions' onChange={inputChange}>
+        <select data-cy="positions"id='positions' name='positions' onChange={inputChange}>
           <option value='Newsletter'>Newsletter</option>
           <option value='Yard Work'>Yard Work</option>
           <option value='Administrative Work'>Administrative Work</option>
